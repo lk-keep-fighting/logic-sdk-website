@@ -57,7 +57,7 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
-    metadata: [{ name: 'keywords', content: '流程定制, 业务定制' }],
+    metadata: [{ name: 'keywords', content: '流程定制, 流程引擎' }],
     navbar: {
       title: 'logic-sdk',
       logo: {
@@ -73,6 +73,7 @@ const config: Config = {
           label: '快速集成',
         },
         { to: '/blog', label: '案例', position: 'left' },
+        { to: '/buy', label: '买源码', position: 'left' },
         // {
         //   type: 'docSidebar',
         //   sidebarId: 'helperSidebar',
