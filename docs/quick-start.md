@@ -1,17 +1,18 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # 快速开始
 
 示例项目git：[logic-sdk-demo](https://gitee.com/codingchangtheworld/logic-sdk-demo)
+
 ## 1. 三步在已有项目集成：
 ### 1.1 添加jar包引用与私服地址
 ```
 <dependency>
     <groupId>com.aims.logic</groupId>
-    <artifactId>logic-sdk</artifactId>
-    <version>0.0.5-SNAPSHOT</version>
+    <artifactId>logic-ide</artifactId>
+    <version>0.0.9-SNAPSHOT</version>
 </dependency>
 <repositories>
     <repository>
@@ -29,7 +30,7 @@ sidebar_position: 3
 ### 1.3 执行脚本添加依赖表
 [logic_demo.sql](/file/logic_demo.sql)
 - 若项目未使用mybatis-plus，则在application.xml添加mybatis-plus配置
-```
+``` yaml
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -37,6 +38,13 @@ spring:
     username: xxx
     password: xxx
 ```
+- 设置配置文件夹目录和包扫描路径
+``` yaml
+logic:
+    config-dir: ./logic-configs
+    scan-package-names: com.aims.wms.infrastructure.service
+```
+
 ## 2. 开始使用
 ### 2.1 启动项目，进入/logic设计
 参照[在线体验](/online-demo)进行逻辑设计；

@@ -70,10 +70,10 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: '快速集成',
+          label: '文档',
         },
         { to: '/blog', label: '案例', position: 'left' },
-        { to: '/buy', label: '买源码', position: 'left' },
+        // { to: '/buy', label: '买源码', position: 'left' },
         // {
         //   type: 'docSidebar',
         //   sidebarId: 'helperSidebar',
@@ -98,7 +98,7 @@ const config: Config = {
               to: '/online-demo',
             },
             {
-              label: '快速集成',
+              label: '快速开始',
               to: '/docs/intro',
             },
           ],
